@@ -8,7 +8,7 @@
 <title>게시판 리스트</title>
 </head>
 <body>
-<h2>자유게시판</h2>
+   <h2>자유게시판</h2>
    <hr>
    <table border="1" cellsoacing="0" cellpadding="0" width"1000">
       <tr>
@@ -27,7 +27,13 @@
             <td>${bdto.bhit }</td>
          </tr>
          </c:forEach>
-   
+         
+         <tr>
+            <td colspan="5" align="right">
+               <input type="button" value="글쓰기" onclick="javascript:window.location='writeForm'">
+            </td>
+         </tr>
+         
       </table>
 </body>
 </html>
